@@ -8,7 +8,7 @@
     <?php
         require_once "config.php"; 
         try {
-            $conexao = new PDO("mysql:host=$servidor;dbname=$db", $usuario, $senha);
+            $conexao = new PDO("mysql:host=$servidor", $usuario, $senha);
             $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo "Conexão realizada com sucesso!";
         }
